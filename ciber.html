@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  
+</head>
+
+<body>
+
+<p> The result of the calculation is <span id="empty"></span></p>
+
+    <script type="text/javascript">
+    
+    console.log("hello world");
+
+    alert("My name is Panos");
+
+    var name = "Panos";
+
+    var lastName = "Kontaxis";
+
+    var a = 5;
+    var b = 14;
+
+    var sum = a+b;
+
+    console.log("La suma entre "+ a +" i "+ b +" es "+ sum);
+
+    var nota_examen = 5.3;
+
+    if(nota_examen <5 ) {
+
+    alert("Ohh has suspendido el examen con un "+nota_examen)
+    } else {
+
+    alert("Muy Bien. Has aprovade el examen con un " + nota_examen)
+    }
+
+    var string = "Tinc un cotxe de color blau"
+
+    var newString = string.replace("blau", "verd");
+
+    console.log(newString);
+
+    var newStringU =  string.replace(/o/g, "u");
+
+    console.log(newStringU);
+
+
+    var casa = ["taula", "cadira", "ordinador", "libreta"]
+
+    for(var i= 0; i< casa.length; i++) {
+
+        console.log("L'objecte "+ casa[i] + " esta a la posicio " + i);
+    }
+
+    function calculator(operator, value1, value2) {
+
+        return ((value1+value2)*operator-2);
+
+    }
+
+    document.getElementById("empty").innerHTML = calculator(5,20,1);
+
+
+
+
+
+
+
+
+
+   
+
+    
+    
+    
+    </script>
+
+
+</body>
+</html>
