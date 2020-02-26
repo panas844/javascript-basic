@@ -7,7 +7,9 @@
 
 <body>
 
-<p> The result of the calculation is <span id="empty"></span></p>
+<p> The result of the suma is <span id="empty1"></span></p>
+<p> The result of the resta is <span id="empty2"></span></p>
+<p> The result of the multi is <span id="empty3"></span></p>
 
     <script type="text/javascript">
     
@@ -54,13 +56,31 @@
         console.log("L'objecte "+ casa[i] + " esta a la posicio " + i);
     }
 
+
+    //Exercici 8
+
     function calculator(operator, value1, value2) {
 
-        return ((value1+value2)*operator-2);
+        if (operator=="suma"){
+            var result = value1+value2;
+        } 
+        
+         if (operator=="resta"){
+          var result =value1-value2;
+          } 
+          
+          if (operator =="multi") {
+          var result =value1*value2;
+         }
+        
+        return result;
 
     }
 
-    document.getElementById("empty").innerHTML = calculator(5,20,1);
+
+    document.getElementById("empty1").innerHTML = (calculator("suma",20,3));
+    document.getElementById("empty2").innerHTML =(calculator("resta",20,3))
+    document.getElementById("empty3").innerHTML =(calculator("multi",20,3))
 
 
 
